@@ -1,0 +1,92 @@
+[
+  {
+    "nama": "EPSON Tinta Original 664 - Seri Warna Lengkap (Bk, C, M, Y)",
+    "harga": "Rp85.000",
+    "gambar": "tinta.img.jpg",
+    "link": {
+      "shopee": "https://id.shp.ee/SiWgG8R",
+      "tokopedia": "https://tokopedia.link/pulpen"
+    }
+  },
+  {
+    "nama": "Amplop Putih PAPERLINE 104 PPS 100 Lembar",
+    "harga": "Rp15.000",
+    "gambar": "amplop104.img.png",
+    "link": {
+      "shopee": "https://id.shp.ee/za2UjaT",
+      "tokopedia": "https://tokopedia.link/hvs"
+    }
+  },
+  {
+    "nama": "PAPERLINE Amplip Bukulet Putih 90 PPS 100 Lembar",
+    "harga": "Rp21.000",
+    "gambar": "amplop90.img.png",
+    "link": {
+      "shopee": "https://id.shp.ee/TAi6nkv",
+      "tokopedia": "https://tokopedia.link/bukutulis"
+    }
+  },
+  {
+    "nama": "Amplop Putih PAPERLINE 110 PPS 100 Lembar",
+    "harga": "Rp17.000",
+    "gambar": "amplop110.img.png",
+    "link": {
+      "shopee": "https://id.shp.ee/UmXKNtp",
+      "tokopedia": "https://tokopedia.link/spidol"
+    }
+  },
+  {
+    "nama": "Kertas WARNA SINAR DUNIA A4 & f4, 70 GSM",
+    "harga": "Rp78.000",
+    "gambar": "1.img.png",
+    "link": {
+      "shopee": "https://id.shp.ee/Uw6JHL5",
+      "tokopedia": "https://tokopedia.link/map"
+    }
+  },
+  {
+    "nama": "Kertas NATURAL A4 & f4, 70 GSM",
+    "harga": "Rp40.000",
+    "gambar": "natural.jpg",
+    "link": {
+      "shopee": "https://id.shp.ee/Y7mfE1E",
+      "tokopedia": "https://tokopedia.link/pensil"
+    }
+  },
+  {
+    "nama": "Kertas SIDU A4 & f4, 70 GSM & 75 GSM",
+    "harga": "Rp52.000",
+    "gambar": "sidu.jpg",
+    "link": {
+      "shopee": "https://id.shp.ee/PdQbcXd",
+      "tokopedia": "https://tokopedia.link/penghapus"
+    }
+  },
+  {
+    "nama": "Kertas AONE A4 & f4, 70 GSM",
+    "harga": "Rp51.000",
+    "gambar": "aone.png",
+    "link": {
+      "shopee": "https://id.shp.ee/bC6TCgQ",
+      "tokopedia": "https://tokopedia.link/stabilo"
+    }
+  },
+  {
+    "nama": "Kertas MAXI A4 & f4, 70 GSM",
+    "harga": "Rp45.000",
+    "gambar": "maxi.png",
+    "link": {
+      "shopee": "https://id.shp.ee/1kQ6t13",
+      "tokopedia": "https://tokopedia.link/amplop"
+    }
+  },
+  {
+    "nama": "Copy Paper Kertas Fotokopi A4 & F4 B75 & B70 GSM",
+    "harga": "Rp45.000",
+    "gambar": "copypaper.png",
+    "link": {
+      "shopee": "https://id.shp.ee/m7vGwHy",
+      "tokopedia": "https://tokopedia.link/lakban"
+    }
+  }
+]

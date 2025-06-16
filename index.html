@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - Toko ATK & Fotocopy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+      max-width: 100%;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background-image: url('toko.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .features, .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .box {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      font-size: 1em;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .box i {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #2ecc71;
+      display: block;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #1f6391;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 60px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .wa-floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+      transition: background 0.3s ease;
+    }
+
+    .wa-floating:hover {
+      background-color: #1ebe5d;
+    }
+
+    .wa-floating i {
+      font-size: 28px;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #2c3e50;
+      }
+
+      nav a {
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #444;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta a {
+        font-size: 0.95em;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Usaha" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-menu">
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 data-aos="fade-up">Toko ATK & Fotocopy Terpercaya</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Layanan cepat, murah, dan lengkap untuk semua kebutuhan alat tulis & cetak dokumen Anda.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Tentang Kami</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="200">
+      Kami adalah usaha lokal yang menyediakan layanan fotocopy, print, penjilidan, serta perlengkapan alat tulis kantor & sekolah. Dengan harga bersahabat dan pelayanan ramah, kami siap membantu Anda setiap hari!
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Kenapa Pilih Kami?</h2>
+    <div class="features">
+      <div class="box" data-aos="zoom-in"><i class="fas fa-face-smile"></i>Pelayanan Cepat & Ramah</div>
+      <div class="box" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-box-open"></i>Produk ATK Lengkap</div>
+      <div class="box" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-print"></i>Fotocopy & Print Murah</div>
+      <div class="box" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-cart-shopping"></i>Bisa Belanja via Shopee</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Layanan Kami</h2>
+    <div class="services">
+      <div class="box" data-aos="fade-up"><i class="fas fa-file-lines"></i>Fotocopy & Print Warna</div>
+      <div class="box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-book"></i>Jilid & Laminating</div>
+      <div class="box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-pen"></i>Jual Alat Tulis Sekolah & Kantor</div>
+      <div class="box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-truck-fast"></i>Pengiriman Cepat via Shopee</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Jam Operasional</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+      Senin – Sabtu: 08.00 – 20.00 WIB<br />
+      Minggu & Tanggal Merah: Tutup
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Lokasi Toko Kami</h2>
+    <div style="text-align: center; margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4983908107873!2d110.4042918143554!3d-7.839960579592392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTAnMjQuMCJTIDExMMKwMjQnMjUuNSJF!5e0!3m2!1sen!2sid!4v1718550000000!5m2!1sen!2sid"
+        width="100%" height="300" style="border:0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  <section class="section cta">
+  <h2 data-aos="fade-up">Yuk, Belanja Sekarang!</h2>
+  <p data-aos="fade-up" data-aos-delay="100">Klik tombol di bawah ini untuk melihat semua produk kami.</p>
+  <a href="produk.html" data-aos="zoom-in" data-aos-delay="200">Lihat Produk</a>
+</section>
+<footer>
+    <div style="max-width: 1000px; margin: auto;">
+      <p>📍 Alamat: Jalan Contoh No.123, Nama Kota</p>
+      <p>📱 WhatsApp: 0812-3456-7890</p>
+      <p>🛒 Shopee: <a href="#" style="color: #fff; text-decoration: underline;">Toko Kami</a></p>
+      <br>
+      &copy; 2025 Toko ATK & Fotocopy
+    </div>
+  </footer>
+  <a href="https://wa.me/6281234567890" target="_blank" class="wa-floating">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
